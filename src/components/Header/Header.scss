@@ -1,0 +1,23 @@
+header{
+    height: 20vh;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    .logo{
+        width: 50%;
+        height: 100%;        
+        img{
+            height: 100%;
+            border-radius: 70%;
+            padding: 0.3rem;
+        }
+    }
+    .menu{
+        width: 50%;
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.estudios{
+    background-image: url(./estudiosLogo.jpg);
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    .tituloSpan{
+        font-size: 7em;
+        color: white;
+        font-weight: 700;   
+        text-shadow: 1px 1px 2px black;    
+    }
+}
