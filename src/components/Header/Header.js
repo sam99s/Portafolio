@@ -6,10 +6,10 @@ import sam99s from './sam99s.png'
 export const Header = () => {
     return(
         <header className="container-fluid d-flex justify-content-around align-items-center">
-            <div class="logo">
+            <div className="logo">
                 <img src={sam99s} alt="Logo sam99s" />
             </div>
-            <nav class="menu">
+            <nav className="menu">
                 <ul className="d-flex justify-content-around">
                     <li>Estudios</li>
                     <li>Experiencia</li>
