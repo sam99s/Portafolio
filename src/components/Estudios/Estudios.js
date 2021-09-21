@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Estudios.scss';
 import { db } from '../../firebase/config';
+import { Proximos } from './Proximos';
 
 export const Estudios = () => {
 
@@ -46,14 +47,16 @@ export const Estudios = () => {
             </div> 
 
             <div className="container cursos">
-                {curso.map((study) => <div className="col-12 mt-5">
-                    <h2 className="text-center">{study.title}</h2>
+                {curso.map((study) => <div className="col-12 mt-5" id={study.id}>
+                    <h2 className="text-center mb-5">{study.title}</h2>
                     <div className="container d-flex justify-content-between align-items-center">
-                        <img src={study.image} alt={study.title} className="col-4"/>
+                        <img src={study.image} alt={study.title} className="col-4 imageStudy"/>
                         <p className="col-6">{study.description}</p>
                     </div>
                 </div>)}
             </div>
+
+            <div className="container proximos mt-5 mb-5"><Proximos /></div>
         
         </section>
     )

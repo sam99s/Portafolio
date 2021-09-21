@@ -1,0 +1,27 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.experiencia{
+    background-image: url(./experiencia.png);
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    .tituloSpan{
+        font-size: 7em;
+        color: white;
+        font-weight: 700;   
+        text-shadow: 1px 1px 2px black; 
+    }
+}
+
+button{
+    max-width: max-content;
+}
+
+.experience-image{
+    width: 35%;
+    height: 35%;
+}

@@ -1,0 +1,22 @@
+footer{
+    background: black;
+    color: white;
+    height: 25vh;
+    margin-top: 15rem;
+
+    .logo, .contacto, .social{
+        height: 100%;               
+    }
+
+    .logo img{
+        border-radius: 70%;
+        height: 80%;
+        width: auto;
+    }
+
+    .imgFooter{
+        height: 40%;
+        width: 60%;
+        transform: scale(0.5);
+    }
+}
