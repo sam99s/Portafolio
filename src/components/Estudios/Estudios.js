@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Estudios.scss';
 import { db } from '../../firebase/config';
 import { Proximos } from './Proximos';
+import { Link } from 'react-router-dom';
 
 export const Estudios = () => {
 
@@ -55,6 +56,12 @@ export const Estudios = () => {
                     </div>
                 </div>)}
             </div>
+
+            <Link to="/estudios">
+                <div className="container d-flex justify-content-center">
+                    <button className="btn btn-outline-primary text-center fs-4">+Estudios</button>
+                </div>
+            </Link>
 
             <div className="container proximos mt-5 mb-5"><Proximos /></div>
         

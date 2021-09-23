@@ -7,24 +7,43 @@ import { Footer } from './components/Footer/Footer';
 import { Caracteristicas } from './components/Caracteristicas/Caracteristicas';
 import { Experiencia } from './components/Experiencia/Experiencia';
 import { Cierre } from './components/Cierre/Cierre';
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
+import { SoloEstudios } from './components/Estudios/SoloEstudios';
+
 
 function App() {
   return (
-    <div>
+    <div>      
+      <Router>
+        <Header />            
+      
+        <Switch>
 
-      <Header />
+          <Route exact path="/">
+            <Yo />
+            <Estudios />
+            <Caracteristicas />
+            <Experiencia />
+            <Cierre />
+          </Route>
 
-      <Yo />
+          <Route exact path="/estudios">
+            <SoloEstudios />
+          </Route>
 
-      <Estudios />
+          <Route exact path="/experiencia"></Route>
 
-      <Caracteristicas />
+          <Route exact path="/contacto"></Route>
 
-      <Experiencia />
+          <Route path="*">
+            <Redirect to="/" />
+          </Route>
 
-      <Cierre />
+        </Switch>
+        
+        <Footer />
 
-      <Footer />
+      </Router>
 
     </div>
   );

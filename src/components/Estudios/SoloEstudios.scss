@@ -1,3 +1,19 @@
+.container-fluid{
+    padding: 0;
+}
+
+.card{    
+    border: none;
+    margin: 0.5rem;
+    transform: scale(1);
+    transition: 1200ms;
+    &:hover{
+        transform: scale(1.7);
+        transition: 1100ms; 
+        z-index: 1;
+    }
+}
+
 .estudios{
     background-image: url(./estudiosLogo.jpg);
     height: 20rem;
@@ -13,7 +29,7 @@
     }
 }
 
-.cursos{
+.lerned{
     background: white;
     color: black;
     .imageStudy{
