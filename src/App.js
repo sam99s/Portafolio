@@ -9,6 +9,7 @@ import { Experiencia } from './components/Experiencia/Experiencia';
 import { Cierre } from './components/Cierre/Cierre';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import { SoloEstudios } from './components/Estudios/SoloEstudios';
+import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 
 
 function App() {
@@ -31,7 +32,9 @@ function App() {
             <SoloEstudios />
           </Route>
 
-          <Route exact path="/experiencia"></Route>
+          <Route exact path="/experiencia">
+            <SoloExperiencia />
+          </Route>
 
           <Route exact path="/contacto"></Route>
 

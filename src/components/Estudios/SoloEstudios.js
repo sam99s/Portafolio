@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../../firebase/config';
-import { Link } from 'react-router-dom';
 import './SoloEstudios.scss'
 import { CartasContainer } from './Cartas/CartasContainer';
 
@@ -64,7 +63,7 @@ export const SoloEstudios = () => {
                     <h2 className="text-center mb-5 text-decoration-underline">{study.title}</h2>
                     <div className="container d-flex justify-content-between align-items-center">
                         <img src={study.image} alt={study.title} className="col-4 imageStudy"/>
-                        <p className="col-6 fs-5">{study.description}</p>
+                        <p className="col-6 fs-5 text-center">{study.description}</p>
                     </div>
                     <div>
                         {study.vista ? 
@@ -84,7 +83,7 @@ export const SoloEstudios = () => {
                         }
                         
                     </div>
-                    <p className="col-12 fs-5">{study.more}</p>                        
+                    <p className="col-12 fs-5 text-center">{study.more}</p>                        
                 </div>                
                 )}
             </div>
