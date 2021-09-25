@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { db } from '../../firebase/config';
 import './soloExperiencia.scss'
 
@@ -29,10 +29,6 @@ export const SoloExperiencia = () => {
     if (experience.length === 0){
         allStudies()
     }
-
-    useEffect(() => {
-        console.log("experience: ", experience)
-    }, [experience])
     
     return(
         <div className="container-fluid">
@@ -50,7 +46,7 @@ export const SoloExperiencia = () => {
 
             <div className="container experience">
                 {experience.map((proyect) => 
-                <div className="container mt-5" id={proyect.id}>
+                <div className="container mt-5" key={proyect.id}>
                     <h2 className="text-center text-decoration-underline mb-5">{proyect.title}</h2>
                     <div className="container d-block d-sm-flex justify-content-between align-items-center">
                         <img src={proyect.image} alt={proyect.title} className="col-12 col-sm-4 imageExperience"/>
@@ -68,13 +64,13 @@ export const SoloExperiencia = () => {
                         ? 
 
                         <div className="container d-flex align-items-center justify-content-center">
-                            <a href={proyect.sitio} target="_blank"><button type="button" className="btn btn-info repositorio">Visitar Sitio</button></a>
+                            <a href={proyect.sitio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-info repositorio">Visitar Sitio</button></a>
                         </div> 
 
                         :
 
                         <div className="container d-flex align-items-center justify-content-center">
-                            <a href={proyect.sitio} target="_blank"><button type="button" className="btn btn-info repositorio">Visitar Repositorio</button></a>
+                            <a href={proyect.sitio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-info repositorio">Visitar Repositorio</button></a>
                         </div> 
                         }                    
                     </div>

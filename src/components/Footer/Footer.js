@@ -10,12 +10,12 @@ export const Footer = () => {
     return(
         <footer className="container-fluid d-flex justify-content-between align-items-center">
             <div className="logo col-2 d-flex justify-content-around align-items-center">
-                <Link to="/"><img src={sam99s}/></Link>
+                <Link to="/"><img src={sam99s} alt="Logo"/></Link>
             </div>
 
             <div className="social col-2 d-flex justify-content-around align-items-center">
-                <a href="https://www.linkedin.com/in/sam99s/" target="_blank"><img src={logoLinkedIn} className="imgFooter"/></a>
-                <a href="https://github.com/sam99s" target="_blank"><img src={logoGitHub} className="imgFooter"/></a>
+                <a href="https://www.linkedin.com/in/sam99s/" target="_blank" rel="noreferrer"><img src={logoLinkedIn} className="imgFooter" alt="LinkedIn"/></a>
+                <a href="https://github.com/sam99s" target="_blank" rel="noreferrer"><img src={logoGitHub} className="imgFooter" alt="GitHub"/></a>
             </div>
         </footer>
     )

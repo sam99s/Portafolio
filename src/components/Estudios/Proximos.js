@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { db } from '../../firebase/config';
 import './Proximos.scss'
 
@@ -30,14 +30,10 @@ export const Proximos = () => {
         othersStudies()
     }
 
-    useEffect(() => {
-        console.log("Pronto: ", pronto)
-    }, [pronto])
-
     return(
         <div className="container">
             <h3 className="text-decoration-underline text-center corte">¿Qué sigo estudiando?</h3>
-            {pronto.map((study) => <div className="col-12 mt-5" id={study.id}>
+            {pronto.map((study) => <div className="col-12 mt-5" key={study.id}>
                 <h2 className="text-center">{study.title}</h2>
                 <div className="container d-flex justify-content-between align-items-center">
                     <p className="col-6 fs-5">{study.description}</p>

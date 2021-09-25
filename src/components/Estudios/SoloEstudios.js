@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { db } from '../../firebase/config';
 import './SoloEstudios.scss'
 import { CartasContainer } from './Cartas/CartasContainer';
@@ -31,10 +31,6 @@ export const SoloEstudios = () => {
         allStudies()
     }
 
-    useEffect(() => {
-        console.log("lerned: ", lerned)
-    }, [lerned])
-
     return(
         <div className="container-fluid">
             <div className="container-fluid SoloEstudios d-flex align-items-center justify-content-center">
@@ -53,13 +49,13 @@ export const SoloEstudios = () => {
 
                 ?
                 
-                <CartasContainer {...study}/> 
+                <CartasContainer key={study.id} {...study}/> 
 
                 :
 
                 /* Sin Cards */
 
-                <div className="col-12 mt-5" id={study.id}>
+                <div className="col-12 mt-5" key={study.id}>
                     <h2 className="text-center mb-5 text-decoration-underline">{study.title}</h2>
                     <div className="container d-block d-sm-flex justify-content-between align-items-center">
                         <img src={study.image} alt={study.title} className="col-12 col-sm-4 imageStudy"/>
@@ -74,7 +70,7 @@ export const SoloEstudios = () => {
                             </div>
 
                             <div className="container d-flex align-items-center justify-content-center">
-                                <a href={study.repositorio} target="_blank"><button type="button" className="btn btn-info repositorio">Visitar Repositorio</button></a>
+                                <a href={study.repositorio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-info repositorio">Visitar Repositorio</button></a>
                             </div>
 
                         </div>

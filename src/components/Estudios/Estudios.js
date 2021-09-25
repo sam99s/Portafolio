@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Estudios.scss';
 import { Proximos } from './Proximos';
 import { Link } from 'react-router-dom';
@@ -31,10 +31,6 @@ export const Estudios = () => {
     if (curso.length === 0){
         allStudies()
     }
-
-    useEffect(() => {
-        console.log("Curso: ", curso)
-    }, [curso])
     
     return(
         <section>
@@ -45,7 +41,7 @@ export const Estudios = () => {
             </div>
 
             <div className="container cursos">
-                {curso.map((study) => <div className="col-12 mt-5" id={study.id}>
+                {curso.map((study) => <div className="col-12 mt-5" key={study.id}>
                     <h2 className="text-center mb-5">{study.title}</h2>
                     <div className="container d-flex justify-content-between align-items-center">
                         <img src={study.image} alt={study.title} className="col-4 imageStudy"/>

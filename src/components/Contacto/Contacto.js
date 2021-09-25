@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Swal from 'sweetalert2';
 import './Contacto.scss'
 
@@ -34,21 +34,21 @@ export const Contacto = () => {
             </div>
 
             <form onSubmit={handleSubmit} id='form' action="https://formspree.io/f/mayavzjg" method="POST">
-                <div class="mb-3 text-center centerBox">
-                    <label for="nameUser" class="form-label fs-3">Nombre</label>
-                    <input name="name" type="name" class="form-control" id="nameUser" placeholder="Juan Perez" required/>
+                <div className="mb-3 text-center centerBox">
+                    <label htmlFor="nameUser" className="form-label fs-3">Nombre</label>
+                    <input name="name" type="name" className="form-control" id="nameUser" placeholder="Juan Perez" required/>
                 </div>
-                <div class="mb-3 text-center centerBox">
-                    <label for="emailAddress" class="form-label fs-3">Correo Electrónico</label>
-                    <input name="mail" type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required/>
+                <div className="mb-3 text-center centerBox">
+                    <label htmlFor="emailAddress" className="form-label fs-3">Correo Electrónico</label>
+                    <input name="mail" type="email" className="form-control" id="emailAddress" placeholder="name@example.com" required/>
                 </div>
-                <div class="mb-3 text-center centerBox">
-                    <label for="celular" class="form-label fs-3">Teléfono de Contacto</label>
-                    <input type="tel" name="tel" class="form-control" id="celular" placeholder="Ej: 03511234567" required/>
+                <div className="mb-3 text-center centerBox">
+                    <label htmlFor="celular" className="form-label fs-3">Teléfono de Contacto</label>
+                    <input type="tel" name="tel" className="form-control" id="celular" placeholder="Ej: 03511234567" required/>
                 </div>
-                <div class="mb-3">
-                    <label for="txtArea" class="form-label fs-3">Mensaje</label>
-                    <textarea name="message" class="form-control" id="txtArea" rows="3" placeholder="Escribir aqui..." required></textarea>
+                <div className="mb-3">
+                    <label htmlFor="txtArea" className="form-label fs-3">Mensaje</label>
+                    <textarea name="message" className="form-control" id="txtArea" rows="3" placeholder="Escribir aqui..." required></textarea>
                 </div>
                 
                 <button type="submit" className="btn btn-success">Enviar</button>
