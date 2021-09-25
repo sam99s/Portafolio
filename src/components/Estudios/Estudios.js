@@ -52,7 +52,7 @@ export const Estudios = () => {
                     <h2 className="text-center mb-5">{study.title}</h2>
                     <div className="container d-flex justify-content-between align-items-center">
                         <img src={study.image} alt={study.title} className="col-4 imageStudy"/>
-                        <p className="col-6">{study.description}</p>
+                        <p className="col-6 fs-5">{study.description}</p>
                     </div>
                 </div>)}
             </div>

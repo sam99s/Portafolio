@@ -21,7 +21,7 @@ export const Caracteristicas = () => {
 
                     <div className="container d-flex justify-content-between align-items-center mb-5">
 
-                        <p className="col-6">Soy una persona que se centra mucho en mejorar sus valores día a día. Me considero una persona con gran perseverancia ante la vida y con una gran resistencia ante las frustraciones que la misma le presenta a uno. Soy muy responsable, poniendo las prioridades por encima de cualquier distracción y esto se debe a que me encanta establecer y cumplir objetivos a corto, mediano y largo plazo🎯... si soy algo estructurado y eso es lo que me da la puntualidad en cada tiempo que realizo una accion determinada.</p>
+                        <p className="col-6  fs-5">Soy una persona que se centra mucho en mejorar sus valores día a día. Me considero una persona con gran perseverancia ante la vida y con una gran resistencia ante las frustraciones que la misma le presenta a uno. Soy muy responsable, poniendo las prioridades por encima de cualquier distracción y esto se debe a que me encanta establecer y cumplir objetivos a corto, mediano y largo plazo🎯... si soy algo estructurado y eso es lo que me da la puntualidad en cada tiempo que realizo una accion determinada.</p>
 
                         <img src={crecimiento} alt="p1" className="col-4"/>
 
@@ -31,20 +31,17 @@ export const Caracteristicas = () => {
 
                         <img src={cerebro} alt="p2" className="col-4"/>
 
-                        <p>Por otro lado, me encanta el área de la lógica, a tal punto que llegue a competir en planos internacionales con el ajedrez ♟️, deporte al cual le agradezco mucho por haberme enseñado a como dar cada paso en mi vida.</p>
+                        <p className="col-6  fs-5">Por otro lado, me encanta el área de la lógica, a tal punto que llegue a competir en planos internacionales con el ajedrez ♟️, deporte al cual le agradezco mucho por haberme enseñado a como dar cada paso en mi vida.</p>
 
                     </div>
 
                     <div className="container d-flex justify-content-between align-items-center mb-5">
 
-                        <p>Y no podia saltearme los objetivos que tengo, ya que como redactaba anteriormente, significan muhco para mi. Los mismos constan hoy principalmente de aprender a programar más y mejor 🤓, crecer financieramente 📈 y conocer el mundo 🌏.</p>
+                        <p className="col-6  fs-5">Y no podia saltearme los objetivos que tengo, ya que como redactaba anteriormente, significan muhco para mi. Los mismos constan hoy principalmente de aprender a programar más y mejor 🤓, crecer financieramente 📈 y conocer el mundo 🌏.</p>
 
                         <img src={metas} alt="p3" className="col-4"/>
                         
                     </div>
-
-                    <></>
-                    <></>
                 </div>
 
             </div>

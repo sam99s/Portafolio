@@ -2,21 +2,30 @@ footer{
     background: black;
     color: white;
     height: 25vh;
-    margin-top: 12rem;
+    margin-top: 8rem;
 
-    .logo, .contacto, .social{
+    .logo, .social{
         height: 100%;               
     }
 
     .logo img{
         border-radius: 70%;
         height: 80%;
-        width: 50%;
+        width: 60%;
+        margin-left: 3rem;        
     }
 
     .imgFooter{
         height: 40%;
         width: 60%;
         transform: scale(0.5);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    footer .logo img {
+        border-radius: 70%;
+        width: 100%;
+        height: auto;
     }
 }
