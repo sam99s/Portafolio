@@ -61,16 +61,16 @@ export const SoloEstudios = () => {
 
                 <div className="col-12 mt-5" id={study.id}>
                     <h2 className="text-center mb-5 text-decoration-underline">{study.title}</h2>
-                    <div className="container d-flex justify-content-between align-items-center">
-                        <img src={study.image} alt={study.title} className="col-4 imageStudy"/>
-                        <p className="col-6 fs-5 text-center">{study.description}</p>
+                    <div className="container d-block d-sm-flex justify-content-between align-items-center">
+                        <img src={study.image} alt={study.title} className="col-12 col-sm-4 imageStudy"/>
+                        <p className="col-12 col-sm-6 fs-5 text-center">{study.description}</p>
                     </div>
                     <div>
                         {study.vista ? 
                         <div className="container">
 
-                            <div className="d-flex align-items-center justify-content-center">
-                                <img src={study.vista} alt={study.title} className="col-4 gifImage"/>
+                            <div className="d-flex align-items-center justify-content-center gifContainer">
+                                <img src={study.vista} alt={study.title} className="col-8 col-md-6 gifImage"/>
                             </div>
 
                             <div className="container d-flex align-items-center justify-content-center">

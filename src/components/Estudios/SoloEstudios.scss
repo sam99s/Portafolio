@@ -26,6 +26,12 @@
         color: white;
         font-weight: 700;   
         text-shadow: 1px 1px 2px black;    
+        @media screen and (max-width: 768px){
+            font-size: 5.5em;
+        }
+        @media screen and (max-width: 576px){
+            font-size: 4em;
+        }
     }
 }
 
@@ -33,15 +39,24 @@
     background: white;
     color: black;
     .imageStudy{
-        transform: scale(0.7);
+        @media screen and (min-width: 576px){
+            transform: scale(1.2);
+            transition: 1500ms;
+        }
+
+        margin: 1.5rem 0;
+        transform: scale(1);
         transition: 1500ms;
     }
+}
+
+.gifContainer{
+    margin-top: 3rem;
 }
 
 .gifImage{    
     border: 1px solid black;
     box-shadow: 10px 5px 5px black;
-    margin-top: 2rem;
 }
 
 .repositorio{
