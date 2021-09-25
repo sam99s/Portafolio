@@ -37,7 +37,7 @@ export const SoloEstudios = () => {
 
     return(
         <div className="container-fluid">
-            <div className="container-fluid estudios d-flex align-items-center justify-content-center">
+            <div className="container-fluid SoloEstudios d-flex align-items-center justify-content-center">
                 <div>
                     <span className="tituloSpan">Estudios</span>
                 </div>                            

@@ -38,14 +38,11 @@ export const Estudios = () => {
     
     return(
         <section>
-            <div>
-                <div className="container-fluid mt-5 mb-5 estudios d-flex align-items-center justify-content-center">
-                    <div>
-                        <span className="tituloSpan">Estudios</span>
-                    </div>                            
-                </div>
-            
-            </div> 
+            <div className="container-fluid mt-5 mb-5 estudios d-flex align-items-center justify-content-center">
+                <div>
+                    <span className="tituloSpan">Estudios</span>
+                </div>                            
+            </div>
 
             <div className="container cursos">
                 {curso.map((study) => <div className="col-12 mt-5" id={study.id}>
@@ -59,7 +56,7 @@ export const Estudios = () => {
 
             <Link to="/estudios">
                 <div className="container d-flex justify-content-center">
-                    <button className="btn btn-outline-primary text-center fs-4">+Estudios</button>
+                    <button className="btn btn-outline-primary mt-5 text-center fs-4">+Estudios</button>
                 </div>
             </Link>
 

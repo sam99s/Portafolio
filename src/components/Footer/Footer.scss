@@ -12,20 +12,48 @@ footer{
         border-radius: 70%;
         height: 80%;
         width: 60%;
-        margin-left: 3rem;        
+        margin-left: 3rem;
+        max-height: 100%;        
     }
 
     .imgFooter{
         height: 40%;
         width: 60%;
-        transform: scale(0.5);
+        transform: scale(0.8);
     }
 }
 
 @media screen and (max-width: 1024px){
-    footer .logo img {
-        border-radius: 70%;
-        width: 100%;
-        height: auto;
+    footer {
+        .logo img {
+            border-radius: 70%;
+            width: 70%;
+            height: auto;
+        }
+
+        .imgFooter{
+            height: 40%;
+            width: 60%;
+            transform: scale(1);
+        }
     }
+        
+}
+
+@media screen and (max-width: 576px){
+    footer {
+        .logo{
+            width: 30%;
+            img {
+                border-radius: 70%;
+                width: 70%;
+                height: auto;
+            }  
+        } 
+
+        .social{
+            width: 30%;
+        }
+    }
+        
 }

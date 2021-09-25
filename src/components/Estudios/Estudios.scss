@@ -5,11 +5,18 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
+
     .tituloSpan{
         font-size: 7em;
         color: white;
         font-weight: 700;   
-        text-shadow: 1px 1px 2px black;    
+        text-shadow: 1px 1px 2px black; 
+        @media screen and (max-width: 768px){
+            font-size: 5.5em;
+        }
+        @media screen and (max-width: 576px){
+            font-size: 4em;
+        }
     }
 }
 
@@ -17,6 +24,15 @@
     background: white;
     color: black;
     .imageStudy{
+        @media screen and (min-width: 576px){
+            transform: scale(1.2);
+            transition: 1500ms;
+        } 
+
+        @media screen and (min-width: 768px){
+            transform: scale(1);
+            transition: 1500ms;
+        }
         transform: scale(0.7);
         transition: 1500ms;
     }
