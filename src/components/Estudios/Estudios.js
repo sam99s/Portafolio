@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Estudios.scss';
 import { Proximos } from './Proximos';
 import { Link } from 'react-router-dom';
-import { db } from '../../../firebase/config';
+import { db } from '../../firebase/config';
 
 export const Estudios = () => {
 

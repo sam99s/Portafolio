@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react/cjs/react.development';
-import { db } from '../../../firebase/config';
+import { db } from '../../firebase/config';
 import './Experiencia.scss';
 
 
