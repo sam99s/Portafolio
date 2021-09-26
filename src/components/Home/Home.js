@@ -14,6 +14,7 @@ export const Home = () => {
             <Caracteristicas />
             <Experiencia />
             <Cierre />
+            
         </div>
     )
     

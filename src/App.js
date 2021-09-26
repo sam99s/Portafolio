@@ -20,8 +20,8 @@ function App() {
             <Home />
           </Route>
 
-          <Route exact path="/home">
-            <Home />
+          <Route exact path="/principio">
+            <Principio />
           </Route>
 
           <Route exact path="/estudios">
