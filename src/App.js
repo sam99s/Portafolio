@@ -2,17 +2,16 @@ import './App.css';
 import { Header } from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Footer } from './components/Footer/Footer';
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Redirect, HashRouter} from 'react-router-dom'
 import { SoloEstudios } from './components/Estudios/SoloEstudios';
 import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 import { Contacto } from './components/Contacto/Contacto';
 import { Home } from './components/Home/Home';
 
-
 function App() {
   return (
     <div>      
-      <Router>
+      <HashRouter>
         <Header />            
       
         <Switch>
@@ -41,7 +40,7 @@ function App() {
         
         <Footer />
 
-      </Router>
+      </HashRouter>
 
     </div>
   );
