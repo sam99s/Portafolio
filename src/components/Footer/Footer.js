@@ -34,7 +34,7 @@ export const Footer = () => {
     return(
         <footer className="container-fluid d-flex justify-content-between align-items-center">
             <div className="logo col-2 d-flex justify-content-around align-items-center">
-                {logos.map((foto) => foto.sam ? <Link to="/"><img src={foto.sam} alt="Logo"/></Link> : <></>)}
+                {logos.map((foto) => foto.sam ? <Link to="/contacto"><img src={foto.sam} alt="Logo"/></Link> : <></>)}
             </div>
 
             <div className="social col-2 d-flex justify-content-around align-items-center">
