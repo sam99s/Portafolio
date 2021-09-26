@@ -21,7 +21,7 @@ function App() {
       
         <Switch>
 
-          <Route exact path="home">
+          <Route exact path="/">
             <Yo />
             <Estudios />
             <Caracteristicas />
@@ -42,7 +42,7 @@ function App() {
           </Route>
 
           <Route path="*">
-            <Redirect to="home" />
+            <Redirect to="/" />
           </Route>
 
         </Switch>
