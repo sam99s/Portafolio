@@ -1,16 +1,12 @@
 import './App.css';
 import { Header } from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Yo } from './components/Yo/Yo';
-import { Estudios } from './components/Estudios/Estudios';
 import { Footer } from './components/Footer/Footer';
-import { Caracteristicas } from './components/Caracteristicas/Caracteristicas';
-import { Experiencia } from './components/Experiencia/Experiencia';
-import { Cierre } from './components/Cierre/Cierre';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import { SoloEstudios } from './components/Estudios/SoloEstudios';
 import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 import { Contacto } from './components/Contacto/Contacto';
+import { Home } from './components/Home/Home';
 
 
 function App() {
@@ -22,11 +18,7 @@ function App() {
         <Switch>
 
           <Route exact path="/">
-            <Yo />
-            <Estudios />
-            <Caracteristicas />
-            <Experiencia />
-            <Cierre />
+            <Home />
           </Route>
 
           <Route exact path="/estudios">
