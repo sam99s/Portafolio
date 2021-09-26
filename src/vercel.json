@@ -1,0 +1,11 @@
+{
+    "rewrites":  [
+        {"source": "/(.*)", "destination": "/"}
+    ],
+    "routes": [
+        { "src": "/", "dest": "/" },
+        { "src": "/estudios", "dest": "/estudios" },
+        { "src": "/experiencia", "dest": "/experiencia" },
+        { "src": "/contacto", "dest": "/contacto" }    
+    ]
+}
