@@ -21,10 +21,6 @@ function App() {
             <Home />
           </Route>
 
-          <Route exact path="/principio">
-            <Principio />
-          </Route>
-
           <Route exact path="/estudios">
             <SoloEstudios />
           </Route>
