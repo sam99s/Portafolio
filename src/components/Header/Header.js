@@ -1,13 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { db } from '../../firebase/config';
 import './Header.scss'
-import sam99s from './sam99s.png'
 
 export const Header = () => {
+
+    const [logos, setLogos] = useState([])
+
+    
+    const logosFotos = async() => {
+        try{
+            const snapshot = db.collection('logos');
+            await snapshot.get()
+                .then((response) => {
+                    const data = response.docs.map((doc) => ({
+                        ...doc.data(),
+                        id: doc.id
+                    }))
+                    
+                    setLogos(data)
+                })
+            
+            
+        } catch (err) {
+            console.error(err)
+        }
+    }
+
+    if (logos.length === 0){
+        logosFotos()
+    }
+
     return(
         <header className="container-fluid d-block d-sm-flex justify-content-around align-items-center">
             <div className="logo col-sm-2 col-md-2 col-lg-4">
-                <Link to="/"><img src={sam99s} alt="Logo sam99s" /></Link>
+            {logos.map((foto) => foto.sam ? <Link to="/"><img src={foto.sam} alt="Logo sam99s" /></Link> : <></>)}
+                
             </div>
             <div className="col-sm-6 col-lg-4">
                 <nav className="menu d-flex justify-content-around">
