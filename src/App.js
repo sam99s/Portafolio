@@ -29,14 +29,6 @@ function App() {
             <Cierre />
           </Route>
 
-          <Route exact path="/home">
-            <Yo />
-            <Estudios />
-            <Caracteristicas />
-            <Experiencia />
-            <Cierre />
-          </Route>
-
           <Route exact path="/estudios">
             <SoloEstudios />
           </Route>
@@ -50,7 +42,7 @@ function App() {
           </Route>
 
           <Route path="*">
-            <Redirect to="/home" />
+            <Redirect to="/" />
           </Route>
 
         </Switch>
