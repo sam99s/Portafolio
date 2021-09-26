@@ -6,8 +6,7 @@ import {BrowserRouter as Router, Switch, Route, Redirect, HashRouter} from 'reac
 import { SoloEstudios } from './components/Estudios/SoloEstudios';
 import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 import { Contacto } from './components/Contacto/Contacto';
-import { Home } from './components/Home/Home';
-import { Principio } from './components/Principio/Principio';
+import { Home } from './components/Home/Home';  
 
 function App() {
   return (
