@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react/cjs/react.development';
 import { db } from '../../firebase/config';
-import { Cierre } from '../Cierre/Cierre';
 import './Experiencia.scss';
 
 
@@ -57,8 +56,7 @@ export const Experiencia = () => {
                         
                     </div>)}
                 </div>
-            </section>
-            <Cierre />
+            </section>            
         </div>
     )
     

@@ -9,6 +9,9 @@ import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 import { Contacto } from './components/Contacto/Contacto';
 import { Home } from './components/Home/Home';
 import { Estudios } from './components/Estudios/Estudios';
+import { Caracteristicas } from './components/Caracteristicas/Caracteristicas';
+import { Experiencia } from './components/Experiencia/Experiencia';
+import { Cierre } from './components/Cierre/Cierre';
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
           <Route path="*">
             <Home />
             <Estudios />
+            <Caracteristicas />
+            <Experiencia />
+            <Cierre />
           </Route>
 
         </Switch>

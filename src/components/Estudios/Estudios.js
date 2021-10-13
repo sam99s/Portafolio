@@ -3,7 +3,6 @@ import './Estudios.scss';
 import { Proximos } from './Proximos';
 import { Link } from 'react-router-dom';
 import { db } from '../../firebase/config';
-import { Caracteristicas } from '../Caracteristicas/Caracteristicas';
 
 export const Estudios = () => {
 
