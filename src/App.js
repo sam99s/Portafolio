@@ -37,6 +37,7 @@ function App() {
             <Home />
             <Estudios />
             <Caracteristicas />
+            <Experiencia />
           </Route>
 
         </Switch>
