@@ -29,12 +29,8 @@ function App() {
             <Contacto />
           </Route>
 
-          <Route exact path="/">
-            <Inicio />
-          </Route>
-
           <Route path="*">
-            <Redirect to="/" />
+            <Inicio />
           </Route>
 
         </Switch>

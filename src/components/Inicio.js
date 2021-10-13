@@ -3,7 +3,9 @@ import React from 'react';
 export const Inicio = () => {
 
     return(
-        <h2 className="text-center mt-5">Mantenimiento de sitio</h2>
+        <section className="container-fluid text-center mt-5">
+            <h1 className="mb-5 text-decoration-underline">Samuel Schulz - Front End Developer</h1>            
+        </section>
     )
     
 }
