@@ -8,6 +8,7 @@ import { SoloEstudios } from './components/Estudios/SoloEstudios';
 import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 import { Contacto } from './components/Contacto/Contacto';
 import { Home } from './components/Home/Home';
+import { Estudios } from './components/Estudios/Estudios';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
 
           <Route path="*">
             <Home />
+            <Estudios />
           </Route>
 
         </Switch>
