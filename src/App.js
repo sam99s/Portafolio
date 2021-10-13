@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom
 import { SoloEstudios } from './components/Estudios/SoloEstudios';
 import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 import { Contacto } from './components/Contacto/Contacto';
-import { Yo } from './components/Yo/Yo';
+import { Home } from './components/Home/Home';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Switch>          
 
           <Route exact path="/estudios">
-            <SoloEstudios />
+            <Home />
           </Route>
 
           <Route exact path="/experiencia">
@@ -29,12 +29,12 @@ function App() {
             <Contacto />
           </Route>
 
-          <Route exact path="/">
-            <Yo />
+          <Route exact path="/home">
+            <Home />
           </Route>
 
           <Route path="*">
-            <Redirect to="/" />
+            <Redirect to="/home" />
           </Route>
 
         </Switch>
