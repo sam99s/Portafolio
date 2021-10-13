@@ -38,6 +38,7 @@ function App() {
             <Estudios />
             <Caracteristicas />
             <Experiencia />
+            <Cierre />
           </Route>
 
         </Switch>

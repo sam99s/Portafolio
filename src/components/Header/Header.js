@@ -34,7 +34,7 @@ export const Header = () => {
     return(
         <header className="container-fluid d-block d-sm-flex justify-content-around align-items-center">
             <div className="logo col-sm-2 col-md-2 col-lg-4">
-            {logos.map((foto) => foto.sam ? <Link to="/contacto"><img src={foto.sam} alt="Logo sam99s" key={foto.id} /></Link> : <></>)}
+            {logos.map((foto) => foto.sam ? <Link to="/"><img src={foto.sam} alt="Logo sam99s" key={foto.id} /></Link> : <></>)}
                 
             </div>
             <div className="col-sm-6 col-lg-4">
