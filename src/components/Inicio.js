@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { db } from '../firebase/config';
+import { Estudios } from './Estudios/Estudios';
 
 export const Inicio = () => {
 
@@ -36,6 +37,7 @@ export const Inicio = () => {
                 <p className="col-sm-8 fs-4 text-center">¡Bienvenid@! Este es mi portafolio, en el cual podrás ver la información mas relevante sobre mi, tanto a nivel personal como a nivel profesional. En el mismo podras navegar sobre distintas categorias para profundizar mas respecto del contenido. <br/> ¡Empecemos!🤓</p>
                 {yo.map((i) => <img src={i.image} key={i.id} className="col-12 col-sm-4" alt="Samuel Schulz"/>)}
             </div>
+            <Estudios />
         </section>
     )
     
