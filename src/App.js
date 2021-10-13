@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { SoloEstudios } from './components/Estudios/SoloEstudios';
 import { SoloExperiencia } from './components/Experiencia/SoloExperiencia';
 import { Contacto } from './components/Contacto/Contacto';
-import { Inicio } from './components/Inicio';
+import { Home } from './components/Home/Home';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           </Route>
 
           <Route path="*">
-            <Inicio />
+            <Home />
           </Route>
 
         </Switch>

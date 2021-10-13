@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Yo.scss'
-import { Estudios } from '../Estudios/Estudios';
 import { db } from '../../firebase/config';
 
 
@@ -41,7 +40,6 @@ export const Yo = () => {
                     {yo.map((i) => <img src={i.image} key={i.id} className="col-12 col-sm-4" alt="Samuel Schulz"/>)}
                 </div>
             </section>
-            <Estudios />
         </div>
     )
 }
