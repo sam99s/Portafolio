@@ -37,8 +37,6 @@ function App() {
             <Home />
             <Estudios />
             <Caracteristicas />
-            <Experiencia />
-            <Cierre />
           </Route>
 
         </Switch>
