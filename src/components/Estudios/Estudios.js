@@ -61,7 +61,6 @@ export const Estudios = () => {
                 <div className="container proximos mt-5 mb-5"><Proximos /></div>
             
             </section>
-            <Caracteristicas />
         </div>
     )
 }
