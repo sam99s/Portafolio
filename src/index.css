@@ -1,6 +1,8 @@
 :root{
   --primary: white;
-  --secondary: violet;
+  --secondary: darkviolet;
+  --alternative: #65049A;
+  --exceptional: blue;
 }
 body {
   margin: 0;

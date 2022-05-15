@@ -8,9 +8,9 @@
 
     .tituloSpan{
         font-size: 7em;
-        color: white;
         font-weight: 700;   
-        text-shadow: 1px 1px 2px black; 
+        color: var(--alternative);
+        text-shadow: 15px 15px 13px black;
         @media screen and (max-width: 768px){
             font-size: 5.5em;
         }
