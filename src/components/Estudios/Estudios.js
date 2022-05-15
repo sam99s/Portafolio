@@ -53,7 +53,7 @@ export const Estudios = () => {
 
                 <Link to="/estudios">
                     <div className="container d-flex justify-content-center">
-                        <button className="btn btn-outline-primary mt-5 text-center fs-4">+Estudios</button>
+                        <button className="btn btn-outline-light mt-5 text-center fs-4">+Estudios</button>
                     </div>
                 </Link>
 

@@ -48,7 +48,7 @@ export const Experiencia = () => {
                             <p className="col-6 fs-5">{experience.description}</p>
                             <div className="col-4 d-flex flex-column align-items-center">
                                 <img src={experience.image} alt={experience.title} className="experience-image mb-5"/>
-                                <a href={experience.sitio} target="_blank" rel="noreferrer" className="fs-5"><button className="fs-5 btn btn-outline-info text-center">Ver Sitio</button></a>
+                                <a href={experience.sitio} target="_blank" rel="noreferrer" className="fs-5"><button className="fs-5 btn btn-outline-light text-center">Ver Sitio</button></a>
                             </div>
                         </div>
                         <hr/>

@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom;    
 
     .tituloSpan{
         font-size: 7em;
@@ -21,8 +21,8 @@
 }
 
 .cursos{
-    background: white;
-    color: black;
+    background-color: #000;
+    color: var(--primary);
     .imageStudy{
         @media screen and (min-width: 576px){
             transform: scale(1.2);

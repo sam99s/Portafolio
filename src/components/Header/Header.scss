@@ -1,7 +1,6 @@
 header{
     height: 20vh;
-    background-color: black;
-    color: white;
+    color: var(--primary);
     font-size: 1.3rem;
 
     @media screen and (max-width: 575px){
