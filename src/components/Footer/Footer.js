@@ -40,6 +40,7 @@ export const Footer = () => {
             <div className="social col-2 d-flex justify-content-around align-items-center">
                 {logos.map((foto) => foto.linkedin ? <a href="https://www.linkedin.com/in/sam99s/" target="_blank" rel="noreferrer"><img src={foto.linkedin} className="imgFooter" alt="LinkedIn" key={foto.id}/></a> : <></>)}
                 {logos.map((foto) => foto.github ? <a href="https://github.com/sam99s" target="_blank" rel="noreferrer"><img src={foto.github} className="imgFooter" alt="GitHub" key={foto.id}/></a> : <></>)}        
+                {logos.map((foto) => foto.instagram ? <a href="https://www.instagram.com/samu_schulz/" target="_blank" rel="noreferrer"><img src={foto.instagram} className="imgFooter" alt="Instagram" key={foto.id}/></a> : <></>)}        
             </div>
         </footer>
     )

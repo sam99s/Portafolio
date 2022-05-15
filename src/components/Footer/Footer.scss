@@ -5,7 +5,8 @@ footer{
     margin-top: 8rem;
 
     .logo, .social{
-        height: 100%;               
+        height: 100%;
+        margin-right: 5rem;
     }
 
     .logo img{
@@ -17,9 +18,13 @@ footer{
     }
 
     .imgFooter{
-        height: 40%;
-        width: 60%;
-        transform: scale(0.8);
+        height: 10rem;
+        width: 3rem;
+        transform: scale(1);
+        &:hover{
+            transform: scale(0.8);
+            transition: 1s;
+        }
     }
 }
 
