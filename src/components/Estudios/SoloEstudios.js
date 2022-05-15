@@ -70,7 +70,7 @@ export const SoloEstudios = () => {
                             </div>
 
                             <div className="container d-flex align-items-center justify-content-center">
-                                <a href={study.repositorio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-info repositorio">Visitar Repositorio</button></a>
+                                <a href={study.repositorio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-outline-light repositorio">Visitar Repositorio</button></a>
                             </div>
 
                         </div>
