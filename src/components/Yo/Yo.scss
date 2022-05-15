@@ -7,3 +7,20 @@
 h1{
     color: var(--primary);
 }
+img{
+    object-fit: contain;
+    height: 20rem;    
+}
+
+.title-animation{
+    animation: title-animation-infinite 2s infinite;
+}
+@keyframes title-animation-infinite{
+    from {
+        color: var(--secondary);
+    }
+    to {
+        color: var(--secondary);
+        opacity: 0.95;
+    }
+}
