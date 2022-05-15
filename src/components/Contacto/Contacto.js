@@ -28,7 +28,7 @@ export const Contacto = () => {
     return(
         <div className="container mt-5 text-center">
             <div className="container">
-                <h2 className="text-center text-decoration-underline">Contacto</h2>
+                <h2 className="text-center">Contacto</h2>
                 <p className="fs-3">Este espacio es para que puedan dejar sus datos y mensaje que quieren hacerme llegar. Con ellos podré ponerme en contacto a la brevedad y resolver cualquier tipo de duda/consulta y/o establecer reuniones😊</p>
                 <hr className="txtContact"/>
             </div>

@@ -7,6 +7,8 @@
     margin: 0.5rem;
     transform: scale(1);
     transition: 1200ms;
+    background-color: #000;
+    color: var(--primary);
     &:hover{
         transform: scale(1.7);
         transition: 1100ms; 
@@ -21,6 +23,8 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
+    background-color: #000;
+    color: var(--primary);
     .tituloSpan{
         font-size: 7em;
         color: white;
@@ -36,8 +40,8 @@
 }
 
 .lerned{
-    background: white;
-    color: black;
+    background-color: #000;
+    color: var(--primary);
     .imageStudy{
         @media screen and (min-width: 576px){
             transform: scale(1.2);

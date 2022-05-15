@@ -1,3 +1,6 @@
+:root{
+  --primary: white;
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif !important;
@@ -5,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 67.5%;
   overflow-x: hidden;
+  background-color: black !important;
 }
 code {
   font-family: 'Poppins', sans-serif !important;

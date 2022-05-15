@@ -5,6 +5,8 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
+    background-color: #000;
+    color: var(--primary);
     .tituloSpan{
         font-size: 7em;
         color: white;
@@ -22,6 +24,8 @@
 .experience{
     background: white;
     color: black;
+    background-color: #000;
+    color: var(--primary);
     h2{
         margin-top: 5rem;
     }

@@ -32,7 +32,7 @@ export const Proximos = () => {
 
     return(
         <div className="container">
-            <h3 className="text-decoration-underline text-center corte">¿Qué sigo estudiando?</h3>
+            <h3 className="text-center corte">¿Qué sigo estudiando?</h3>
             {pronto.map((study) => <div className="col-12 mt-5" key={study.id}>
                 <h2 className="text-center">{study.title}</h2>
                 <div className="container d-flex justify-content-between align-items-center">
