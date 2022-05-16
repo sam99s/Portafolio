@@ -64,13 +64,13 @@ export const SoloExperiencia = () => {
                         ? 
 
                         <div className="container d-flex align-items-center justify-content-center">
-                            <a href={proyect.sitio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-info repositorio">Visitar Sitio</button></a>
+                            <a href={proyect.sitio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-outline-light repositorio">Visitar Sitio</button></a>
                         </div> 
 
                         :
 
                         <div className="container d-flex align-items-center justify-content-center">
-                            <a href={proyect.sitio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-info repositorio">Visitar Repositorio</button></a>
+                            <a href={proyect.sitio} target="_blank" rel="noreferrer"><button type="button" className="btn btn-outline-light repositorio">Visitar Repositorio</button></a>
                         </div> 
                         }                    
                     </div>
